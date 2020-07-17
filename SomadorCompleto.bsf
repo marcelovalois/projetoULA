@@ -1,0 +1,148 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 208 240)
+	(text "SomadorCompleto" (rect 5 0 107 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "EntSomaA0" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "EntSomaA0" (rect 21 27 87 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "EntSomaA1" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "EntSomaA1" (rect 21 43 87 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "EntSomaA2" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "EntSomaA2" (rect 21 59 87 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "EntSomaA3" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "EntSomaA3" (rect 21 75 87 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SinalA" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "SinalA" (rect 21 91 57 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "SinalB" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "SinalB" (rect 21 107 56 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "EntSomaB0" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "EntSomaB0" (rect 21 123 85 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "EntSomaB1" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "EntSomaB1" (rect 21 139 85 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "EntSomaB2" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "EntSomaB2" (rect 21 155 85 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "EntSomaB3" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "EntSomaB3" (rect 21 171 85 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "FlagSoma" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "FlagSoma" (rect 21 187 76 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "SaidaSoma0" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SaidaSoma0" (rect 101 27 171 41)(font "Arial" (font_size 8)))
+		(line (pt 192 32)(pt 176 32)(line_width 1))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "SaidaSoma1" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SaidaSoma1" (rect 101 43 171 57)(font "Arial" (font_size 8)))
+		(line (pt 192 48)(pt 176 48)(line_width 1))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "SaidaSoma2" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SaidaSoma2" (rect 101 59 171 73)(font "Arial" (font_size 8)))
+		(line (pt 192 64)(pt 176 64)(line_width 1))
+	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "SaidaSoma3" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SaidaSoma3" (rect 101 75 171 89)(font "Arial" (font_size 8)))
+		(line (pt 192 80)(pt 176 80)(line_width 1))
+	)
+	(port
+		(pt 192 96)
+		(output)
+		(text "SaidaSoma4" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "SaidaSoma4" (rect 101 91 171 105)(font "Arial" (font_size 8)))
+		(line (pt 192 96)(pt 176 96)(line_width 1))
+	)
+	(port
+		(pt 192 112)
+		(output)
+		(text "SinalBitSoma" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "SinalBitSoma" (rect 98 107 171 121)(font "Arial" (font_size 8)))
+		(line (pt 192 112)(pt 176 112)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 208)(line_width 1))
+	)
+)

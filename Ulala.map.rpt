@@ -1,0 +1,467 @@
+Analysis & Synthesis report for Ulala
+Mon Apr 22 18:42:38 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Apr 22 18:42:38 2019         ;
+; Quartus II 64-Bit Version          ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                      ; Ulala                                         ;
+; Top-level Entity Name              ; Final                                         ;
+; Family                             ; Cyclone IV E                                  ;
+; Total logic elements               ; 161                                           ;
+;     Total combinational functions  ; 161                                           ;
+;     Dedicated logic registers      ; 0                                             ;
+; Total registers                    ; 0                                             ;
+; Total pins                         ; 75                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; Final              ; Ulala              ;
+; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
+; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/SomadorCompleto.bdf         ;
+; DECOD_LEFT/L-DECOD.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/L-DECOD.bdf      ;
+; DECOD_LEFT/LeftA.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftA.bdf        ;
+; DECOD_LEFT/LeftB.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftB.bdf        ;
+; DECOD_LEFT/LeftC.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftC.bdf        ;
+; DECOD_LEFT/LeftD.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftD.bdf        ;
+; DECOD_LEFT/LeftE.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftE.bdf        ;
+; DECOD_LEFT/LeftF.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftF.bdf        ;
+; DECOD_LEFT/LeftG.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_LEFT/LeftG.bdf        ;
+; DECOD_RIGHT/R-DECOD.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/R-DECOD.bdf     ;
+; DECOD_RIGHT/RightA.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightA.bdf      ;
+; DECOD_RIGHT/RightB.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightB.bdf      ;
+; DECOD_RIGHT/RightC.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightC.bdf      ;
+; DECOD_RIGHT/RightD.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightD.bdf      ;
+; DECOD_RIGHT/RightE.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightE.bdf      ;
+; DECOD_RIGHT/RightF.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightF.bdf      ;
+; DECOD_RIGHT/RightG.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/DECOD_RIGHT/RightG.bdf      ;
+; Soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Soma.bdf                    ;
+; CompAB.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/CompAB.bdf                  ;
+; MuxSelecionaCompl.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/MuxSelecionaCompl.bdf       ;
+; Somador4bits.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Somador4bits.bdf            ;
+; Subtrator.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Subtrator.bdf               ;
+; A_maior_que_B.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/A_maior_que_B.bdf           ;
+; Bit_maior_que_bit.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Bit_maior_que_bit.bdf       ;
+; Complemento_a_dois.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Complemento_a_dois.bdf      ;
+; Modulo_maior_que_modulo.bdf      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Modulo_maior_que_modulo.bdf ;
+; soma1.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/soma1.bdf                   ;
+; somadorBit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/somadorBit.bdf              ;
+; Demux81.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Demux81.bdf                 ;
+; AigualB.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/AigualB.bdf                 ;
+; AND1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/AND1.bdf                    ;
+; XOR1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/XOR1.bdf                    ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/ULA.bdf                     ;
+; Final.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Final.bdf                   ;
+; Decoder.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/gop/Downloads/ULA_Final/Decoder.bdf                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 161      ;
+;                                             ;          ;
+; Total combinational functions               ; 161      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 118      ;
+;     -- 3 input functions                    ; 38       ;
+;     -- <=2 input functions                  ; 5        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 161      ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 75       ;
+; Maximum fan-out node                        ; S2~input ;
+; Maximum fan-out                             ; 39       ;
+; Total fan-out                               ; 731      ;
+; Average fan-out                             ; 2.35     ;
++---------------------------------------------+----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                 ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                          ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
+; |Final                                    ; 161 (2)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |Final                                                                                       ; work         ;
+;    |Decoder:inst17|                       ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17                                                                        ; work         ;
+;       |L-DECOD:inst1|                     ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1                                                          ; work         ;
+;          |LeftA:inst|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftA:inst                                               ; work         ;
+;          |LeftB:inst11|                   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftB:inst11                                             ; work         ;
+;          |LeftC:inst2|                    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftC:inst2                                              ; work         ;
+;          |LeftD:inst3|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftD:inst3                                              ; work         ;
+;          |LeftE:inst4|                    ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftE:inst4                                              ; work         ;
+;          |LeftF:inst5|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftF:inst5                                              ; work         ;
+;          |LeftG:inst6|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|L-DECOD:inst1|LeftG:inst6                                              ; work         ;
+;       |R-DECOD:inst|                      ; 29 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst                                                           ; work         ;
+;          |RightA:inst|                    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightA:inst                                               ; work         ;
+;          |RightB:inst1|                   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightB:inst1                                              ; work         ;
+;          |RightC:inst2|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightC:inst2                                              ; work         ;
+;          |RightD:inst3|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightD:inst3                                              ; work         ;
+;          |RightE:inst4|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightE:inst4                                              ; work         ;
+;          |RightF:inst5|                   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightF:inst5                                              ; work         ;
+;          |RightG:inst6|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst17|R-DECOD:inst|RightG:inst6                                              ; work         ;
+;    |Decoder:inst3|                        ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3                                                                         ;              ;
+;       |L-DECOD:inst1|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|L-DECOD:inst1                                                           ;              ;
+;          |LeftA:inst|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|L-DECOD:inst1|LeftA:inst                                                ;              ;
+;       |R-DECOD:inst|                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst                                                            ;              ;
+;          |RightA:inst|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightA:inst                                                ;              ;
+;          |RightB:inst1|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightB:inst1                                               ;              ;
+;          |RightC:inst2|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightC:inst2                                               ;              ;
+;          |RightD:inst3|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightD:inst3                                               ;              ;
+;          |RightE:inst4|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightE:inst4                                               ;              ;
+;          |RightF:inst5|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightF:inst5                                               ;              ;
+;          |RightG:inst6|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst3|R-DECOD:inst|RightG:inst6                                               ;              ;
+;    |Decoder:inst4|                        ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4                                                                         ; work         ;
+;       |L-DECOD:inst1|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|L-DECOD:inst1                                                           ; work         ;
+;          |LeftA:inst|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|L-DECOD:inst1|LeftA:inst                                                ; work         ;
+;       |R-DECOD:inst|                      ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst                                                            ; work         ;
+;          |RightA:inst|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightA:inst                                                ; work         ;
+;          |RightB:inst1|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightB:inst1                                               ; work         ;
+;          |RightC:inst2|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightC:inst2                                               ; work         ;
+;          |RightD:inst3|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightD:inst3                                               ; work         ;
+;          |RightE:inst4|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightE:inst4                                               ; work         ;
+;          |RightF:inst5|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightF:inst5                                               ; work         ;
+;          |RightG:inst6|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Decoder:inst4|R-DECOD:inst|RightG:inst6                                               ; work         ;
+;    |ULA:inst|                             ; 83 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst                                                                              ;              ;
+;       |AND1:inst14|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|AND1:inst14                                                                  ;              ;
+;       |A_maior_que_B:A_maior_B|           ; 9 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|A_maior_que_B:A_maior_B                                                      ;              ;
+;          |Modulo_maior_que_modulo:inst15| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15                       ; work         ;
+;          |Modulo_maior_que_modulo:inst|   ; 5 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst                         ; work         ;
+;             |Bit_maior_que_bit:inst1|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst1 ; work         ;
+;             |Bit_maior_que_bit:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst  ; work         ;
+;       |AigualB:inst22|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|AigualB:inst22                                                               ; work         ;
+;       |Demux81:inst|                      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Demux81:inst                                                                 ;              ;
+;       |SomadorCompleto:inst13|            ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13                                                       ;              ;
+;          |MuxSelecionaCompl:inst51|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|MuxSelecionaCompl:inst51                              ;              ;
+;          |MuxSelecionaCompl:inst|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|MuxSelecionaCompl:inst                                ;              ;
+;          |Somador4bits:inst11|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11                                   ;              ;
+;             |Soma:inst1|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst1                        ;              ;
+;             |Soma:inst2|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst2                        ;              ;
+;             |Soma:inst3|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst3                        ;              ;
+;          |Somador4bits:inst1|             ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1                                    ;              ;
+;             |Soma:inst2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst2                         ;              ;
+;             |Soma:inst3|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst3                         ;              ;
+;          |Somador4bits:inst6|             ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6                                    ;              ;
+;             |Soma:inst2|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst2                         ;              ;
+;             |Soma:inst3|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst3                         ;              ;
+;       |Subtrator:inst1|                   ; 16 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1                                                              ;              ;
+;          |MuxSelecionaCompl:inst28|       ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|MuxSelecionaCompl:inst28                                     ;              ;
+;          |MuxSelecionaCompl:inst51|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|MuxSelecionaCompl:inst51                                     ;              ;
+;          |Somador4bits:inst|              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|Somador4bits:inst                                            ;              ;
+;             |Soma:inst1|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst1                                 ;              ;
+;             |Soma:inst2|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst2                                 ;              ;
+;             |Soma:inst3|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst3                                 ;              ;
+;       |XOR1:inst15|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|ULA:inst|XOR1:inst15                                                                  ;              ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Final|ULA:inst|Subtrator:inst1|inst55 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 22 18:42:33 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ulala -c Ulala
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 1 design units, including 1 entities, in source file somadorcompleto.bdf
+    Info: Found entity 1: SomadorCompleto
+Info: Found 1 design units, including 1 entities, in source file decod_left/l-decod.bdf
+    Info: Found entity 1: L-DECOD
+Info: Found 1 design units, including 1 entities, in source file decod_left/lefta.bdf
+    Info: Found entity 1: LeftA
+Info: Found 1 design units, including 1 entities, in source file decod_left/leftb.bdf
+    Info: Found entity 1: LeftB
+Info: Found 1 design units, including 1 entities, in source file decod_left/leftc.bdf
+    Info: Found entity 1: LeftC
+Info: Found 1 design units, including 1 entities, in source file decod_left/leftd.bdf
+    Info: Found entity 1: LeftD
+Info: Found 1 design units, including 1 entities, in source file decod_left/lefte.bdf
+    Info: Found entity 1: LeftE
+Info: Found 1 design units, including 1 entities, in source file decod_left/leftf.bdf
+    Info: Found entity 1: LeftF
+Info: Found 1 design units, including 1 entities, in source file decod_left/leftg.bdf
+    Info: Found entity 1: LeftG
+Info: Found 1 design units, including 1 entities, in source file decod_right/r-decod.bdf
+    Info: Found entity 1: R-DECOD
+Info: Found 1 design units, including 1 entities, in source file decod_right/righta.bdf
+    Info: Found entity 1: RightA
+Info: Found 1 design units, including 1 entities, in source file decod_right/rightb.bdf
+    Info: Found entity 1: RightB
+Info: Found 1 design units, including 1 entities, in source file decod_right/rightc.bdf
+    Info: Found entity 1: RightC
+Info: Found 1 design units, including 1 entities, in source file decod_right/rightd.bdf
+    Info: Found entity 1: RightD
+Info: Found 1 design units, including 1 entities, in source file decod_right/righte.bdf
+    Info: Found entity 1: RightE
+Info: Found 1 design units, including 1 entities, in source file decod_right/rightf.bdf
+    Info: Found entity 1: RightF
+Info: Found 1 design units, including 1 entities, in source file decod_right/rightg.bdf
+    Info: Found entity 1: RightG
+Info: Found 1 design units, including 1 entities, in source file soma.bdf
+    Info: Found entity 1: Soma
+Info: Found 1 design units, including 1 entities, in source file compab.bdf
+    Info: Found entity 1: CompAB
+Info: Found 1 design units, including 1 entities, in source file muxselecionacompl.bdf
+    Info: Found entity 1: MuxSelecionaCompl
+Info: Found 1 design units, including 1 entities, in source file somador4bits.bdf
+    Info: Found entity 1: Somador4bits
+Info: Found 1 design units, including 1 entities, in source file subtrator.bdf
+    Info: Found entity 1: Subtrator
+Info: Found 1 design units, including 1 entities, in source file a_maior_que_b.bdf
+    Info: Found entity 1: A_maior_que_B
+Info: Found 1 design units, including 1 entities, in source file bit_maior_que_bit.bdf
+    Info: Found entity 1: Bit_maior_que_bit
+Info: Found 1 design units, including 1 entities, in source file complemento_a_dois.bdf
+    Info: Found entity 1: Complemento_a_dois
+Info: Found 1 design units, including 1 entities, in source file modulo_maior_que_modulo.bdf
+    Info: Found entity 1: Modulo_maior_que_modulo
+Info: Found 1 design units, including 1 entities, in source file soma1.bdf
+    Info: Found entity 1: soma1
+Info: Found 1 design units, including 1 entities, in source file somadorbit.bdf
+    Info: Found entity 1: somadorBit
+Info: Found 1 design units, including 1 entities, in source file mux81.bdf
+    Info: Found entity 1: Mux81
+Info: Found 1 design units, including 1 entities, in source file demux81.bdf
+    Info: Found entity 1: Demux81
+Info: Found 1 design units, including 1 entities, in source file aigualb.bdf
+    Info: Found entity 1: AigualB
+Info: Found 1 design units, including 1 entities, in source file and1.bdf
+    Info: Found entity 1: AND1
+Info: Found 1 design units, including 1 entities, in source file xor1.bdf
+    Info: Found entity 1: XOR1
+Info: Found 1 design units, including 1 entities, in source file ula.bdf
+    Info: Found entity 1: ULA
+Info: Found 1 design units, including 1 entities, in source file final.bdf
+    Info: Found entity 1: Final
+Info: Found 1 design units, including 1 entities, in source file decoder.bdf
+    Info: Found entity 1: Decoder
+Info: Elaborating entity "Final" for the top level hierarchy
+Info: Elaborating entity "Decoder" for hierarchy "Decoder:inst3"
+Info: Elaborating entity "L-DECOD" for hierarchy "Decoder:inst3|L-DECOD:inst1"
+Info: Elaborating entity "LeftA" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftA:inst"
+Info: Elaborating entity "LeftB" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftB:inst11"
+Info: Elaborating entity "LeftC" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftC:inst2"
+Info: Elaborating entity "LeftD" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftD:inst3"
+Info: Elaborating entity "LeftE" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftE:inst4"
+Info: Elaborating entity "LeftF" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftF:inst5"
+Info: Elaborating entity "LeftG" for hierarchy "Decoder:inst3|L-DECOD:inst1|LeftG:inst6"
+Info: Elaborating entity "R-DECOD" for hierarchy "Decoder:inst3|R-DECOD:inst"
+Info: Elaborating entity "RightA" for hierarchy "Decoder:inst3|R-DECOD:inst|RightA:inst"
+Info: Elaborating entity "RightB" for hierarchy "Decoder:inst3|R-DECOD:inst|RightB:inst1"
+Info: Elaborating entity "RightC" for hierarchy "Decoder:inst3|R-DECOD:inst|RightC:inst2"
+Info: Elaborating entity "RightD" for hierarchy "Decoder:inst3|R-DECOD:inst|RightD:inst3"
+Info: Elaborating entity "RightE" for hierarchy "Decoder:inst3|R-DECOD:inst|RightE:inst4"
+Info: Elaborating entity "RightF" for hierarchy "Decoder:inst3|R-DECOD:inst|RightF:inst5"
+Info: Elaborating entity "RightG" for hierarchy "Decoder:inst3|R-DECOD:inst|RightG:inst6"
+Info: Elaborating entity "ULA" for hierarchy "ULA:inst"
+Info: Elaborating entity "SomadorCompleto" for hierarchy "ULA:inst|SomadorCompleto:inst13"
+Info: Elaborating entity "Somador4bits" for hierarchy "ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11"
+Info: Elaborating entity "Soma" for hierarchy "ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst"
+Info: Elaborating entity "MuxSelecionaCompl" for hierarchy "ULA:inst|SomadorCompleto:inst13|MuxSelecionaCompl:inst51"
+Info: Elaborating entity "Modulo_maior_que_modulo" for hierarchy "ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35"
+Info: Elaborating entity "Bit_maior_que_bit" for hierarchy "ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst3"
+Info: Elaborating entity "CompAB" for hierarchy "ULA:inst|SomadorCompleto:inst13|CompAB:inst26"
+Info: Elaborating entity "Demux81" for hierarchy "ULA:inst|Demux81:inst"
+Info: Elaborating entity "Complemento_a_dois" for hierarchy "ULA:inst|Complemento_a_dois:Comp2"
+Info: Elaborating entity "soma1" for hierarchy "ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2"
+Info: Elaborating entity "somadorBit" for hierarchy "ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2|somadorBit:inst17"
+Info: Elaborating entity "Subtrator" for hierarchy "ULA:inst|Subtrator:inst1"
+Info: Elaborating entity "AND1" for hierarchy "ULA:inst|AND1:inst14"
+Info: Elaborating entity "XOR1" for hierarchy "ULA:inst|XOR1:inst15"
+Info: Elaborating entity "A_maior_que_B" for hierarchy "ULA:inst|A_maior_que_B:A_maior_B"
+Info: Elaborating entity "AigualB" for hierarchy "ULA:inst|AigualB:inst22"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "A-LG" is stuck at VCC
+    Warning (13410): Pin "B-LG" is stuck at VCC
+Info: Timing-Driven Synthesis is running
+Warning: Ignored assignments for entity "Ulala" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity Ulala -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Ulala -section_id "Root Region" was ignored
+Info: Implemented 236 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
+    Info: Implemented 62 output pins
+    Info: Implemented 161 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4456 megabytes
+    Info: Processing ended: Mon Apr 22 18:42:38 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

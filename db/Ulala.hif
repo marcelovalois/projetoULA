@@ -1,0 +1,821 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Decoder
+# storage
+db|Ulala.(1).cnf
+db|Ulala.(1).cnf
+# case_insensitive
+# source_file
+decoder.bdf
+b57b321b6478609059916941ef71783a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3
+Decoder:inst4
+Decoder:inst17
+}
+# macro_sequence
+
+# end
+# entity
+L-DECOD
+# storage
+db|Ulala.(2).cnf
+db|Ulala.(2).cnf
+# case_insensitive
+# source_file
+decod_left|l-decod.bdf
+49f0df80ccf4c375493335ea4976f13
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1
+Decoder:inst4|L-DECOD:inst1
+Decoder:inst17|L-DECOD:inst1
+}
+# macro_sequence
+
+# end
+# entity
+LeftA
+# storage
+db|Ulala.(3).cnf
+db|Ulala.(3).cnf
+# case_insensitive
+# source_file
+decod_left|lefta.bdf
+6d164315b38cb437dd6b1ee37dc9d5d2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftA:inst
+Decoder:inst4|L-DECOD:inst1|LeftA:inst
+Decoder:inst17|L-DECOD:inst1|LeftA:inst
+}
+# macro_sequence
+
+# end
+# entity
+LeftB
+# storage
+db|Ulala.(4).cnf
+db|Ulala.(4).cnf
+# case_insensitive
+# source_file
+decod_left|leftb.bdf
+3666b9916ab5f444b215669c39f94d3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftB:inst11
+Decoder:inst4|L-DECOD:inst1|LeftB:inst11
+Decoder:inst17|L-DECOD:inst1|LeftB:inst11
+}
+# macro_sequence
+
+# end
+# entity
+LeftC
+# storage
+db|Ulala.(5).cnf
+db|Ulala.(5).cnf
+# case_insensitive
+# source_file
+decod_left|leftc.bdf
+46a48846dac8fbce8b2551f72b5edc63
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftC:inst2
+Decoder:inst4|L-DECOD:inst1|LeftC:inst2
+Decoder:inst17|L-DECOD:inst1|LeftC:inst2
+}
+# macro_sequence
+
+# end
+# entity
+LeftD
+# storage
+db|Ulala.(6).cnf
+db|Ulala.(6).cnf
+# case_insensitive
+# source_file
+decod_left|leftd.bdf
+d64195e430e1b0739beb376b75159c85
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftD:inst3
+Decoder:inst4|L-DECOD:inst1|LeftD:inst3
+Decoder:inst17|L-DECOD:inst1|LeftD:inst3
+}
+# macro_sequence
+
+# end
+# entity
+LeftE
+# storage
+db|Ulala.(7).cnf
+db|Ulala.(7).cnf
+# case_insensitive
+# source_file
+decod_left|lefte.bdf
+d35b247620db4f48dc5a245c3e342c5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftE:inst4
+Decoder:inst4|L-DECOD:inst1|LeftE:inst4
+Decoder:inst17|L-DECOD:inst1|LeftE:inst4
+}
+# macro_sequence
+
+# end
+# entity
+LeftF
+# storage
+db|Ulala.(8).cnf
+db|Ulala.(8).cnf
+# case_insensitive
+# source_file
+decod_left|leftf.bdf
+657fbe81cf1c7b25a99bb07239a07927
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftF:inst5
+Decoder:inst4|L-DECOD:inst1|LeftF:inst5
+Decoder:inst17|L-DECOD:inst1|LeftF:inst5
+}
+# macro_sequence
+
+# end
+# entity
+LeftG
+# storage
+db|Ulala.(9).cnf
+db|Ulala.(9).cnf
+# case_insensitive
+# source_file
+decod_left|leftg.bdf
+84fc569ed08bf5f22cfc73af493259d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|L-DECOD:inst1|LeftG:inst6
+Decoder:inst4|L-DECOD:inst1|LeftG:inst6
+Decoder:inst17|L-DECOD:inst1|LeftG:inst6
+}
+# macro_sequence
+
+# end
+# entity
+R-DECOD
+# storage
+db|Ulala.(10).cnf
+db|Ulala.(10).cnf
+# case_insensitive
+# source_file
+decod_right|r-decod.bdf
+14623a747e719bee121a97f9e25c46a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst
+Decoder:inst4|R-DECOD:inst
+Decoder:inst17|R-DECOD:inst
+}
+# macro_sequence
+
+# end
+# entity
+RightA
+# storage
+db|Ulala.(11).cnf
+db|Ulala.(11).cnf
+# case_insensitive
+# source_file
+decod_right|righta.bdf
+903dc6f97a28b31823771646e22ff5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightA:inst
+Decoder:inst4|R-DECOD:inst|RightA:inst
+Decoder:inst17|R-DECOD:inst|RightA:inst
+}
+# macro_sequence
+
+# end
+# entity
+RightB
+# storage
+db|Ulala.(12).cnf
+db|Ulala.(12).cnf
+# case_insensitive
+# source_file
+decod_right|rightb.bdf
+c75ca261b832ecf12240330138cb5d7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightB:inst1
+Decoder:inst4|R-DECOD:inst|RightB:inst1
+Decoder:inst17|R-DECOD:inst|RightB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+RightC
+# storage
+db|Ulala.(13).cnf
+db|Ulala.(13).cnf
+# case_insensitive
+# source_file
+decod_right|rightc.bdf
+876bbc3735d1f8a3b9f4e87b456e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightC:inst2
+Decoder:inst4|R-DECOD:inst|RightC:inst2
+Decoder:inst17|R-DECOD:inst|RightC:inst2
+}
+# macro_sequence
+
+# end
+# entity
+RightD
+# storage
+db|Ulala.(14).cnf
+db|Ulala.(14).cnf
+# case_insensitive
+# source_file
+decod_right|rightd.bdf
+34769f47d2e6bb905b1d4a74c6b143
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightD:inst3
+Decoder:inst4|R-DECOD:inst|RightD:inst3
+Decoder:inst17|R-DECOD:inst|RightD:inst3
+}
+# macro_sequence
+
+# end
+# entity
+RightE
+# storage
+db|Ulala.(15).cnf
+db|Ulala.(15).cnf
+# case_insensitive
+# source_file
+decod_right|righte.bdf
+1eecd119a3f1d9d0f05e3297da690cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightE:inst4
+Decoder:inst4|R-DECOD:inst|RightE:inst4
+Decoder:inst17|R-DECOD:inst|RightE:inst4
+}
+# macro_sequence
+
+# end
+# entity
+RightF
+# storage
+db|Ulala.(16).cnf
+db|Ulala.(16).cnf
+# case_insensitive
+# source_file
+decod_right|rightf.bdf
+68126b98872785a6a43615941fb6dae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightF:inst5
+Decoder:inst4|R-DECOD:inst|RightF:inst5
+Decoder:inst17|R-DECOD:inst|RightF:inst5
+}
+# macro_sequence
+
+# end
+# entity
+RightG
+# storage
+db|Ulala.(17).cnf
+db|Ulala.(17).cnf
+# case_insensitive
+# source_file
+decod_right|rightg.bdf
+81cc222b34eaec2b12e7973eaa64bee
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Decoder:inst3|R-DECOD:inst|RightG:inst6
+Decoder:inst4|R-DECOD:inst|RightG:inst6
+Decoder:inst17|R-DECOD:inst|RightG:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Somador4bits
+# storage
+db|Ulala.(20).cnf
+db|Ulala.(20).cnf
+# case_insensitive
+# source_file
+somador4bits.bdf
+8df753ef93176427641e6a1a2318455
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6
+ULA:inst|Subtrator:inst1|Somador4bits:inst
+ULA:inst|Subtrator:inst1|Somador4bits:inst1
+ULA:inst|Subtrator:inst1|Somador4bits:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Soma
+# storage
+db|Ulala.(21).cnf
+db|Ulala.(21).cnf
+# case_insensitive
+# source_file
+soma.bdf
+962fc7ddbb97b88708e70ec3a85f24
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst1
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst2
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst11|Soma:inst3
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst1
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst2
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst1|Soma:inst3
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst1
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst2
+ULA:inst|SomadorCompleto:inst13|Somador4bits:inst6|Soma:inst3
+ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst
+ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst1
+ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst2
+ULA:inst|Subtrator:inst1|Somador4bits:inst|Soma:inst3
+ULA:inst|Subtrator:inst1|Somador4bits:inst1|Soma:inst
+ULA:inst|Subtrator:inst1|Somador4bits:inst1|Soma:inst1
+ULA:inst|Subtrator:inst1|Somador4bits:inst1|Soma:inst2
+ULA:inst|Subtrator:inst1|Somador4bits:inst1|Soma:inst3
+ULA:inst|Subtrator:inst1|Somador4bits:inst6|Soma:inst
+ULA:inst|Subtrator:inst1|Somador4bits:inst6|Soma:inst1
+ULA:inst|Subtrator:inst1|Somador4bits:inst6|Soma:inst2
+ULA:inst|Subtrator:inst1|Somador4bits:inst6|Soma:inst3
+}
+# macro_sequence
+
+# end
+# entity
+MuxSelecionaCompl
+# storage
+db|Ulala.(22).cnf
+db|Ulala.(22).cnf
+# case_insensitive
+# source_file
+muxselecionacompl.bdf
+312734b828a66c7e5a5257ab8e6a2dc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|MuxSelecionaCompl:inst51
+ULA:inst|SomadorCompleto:inst13|MuxSelecionaCompl:inst
+ULA:inst|Subtrator:inst1|MuxSelecionaCompl:inst51
+ULA:inst|Subtrator:inst1|MuxSelecionaCompl:inst28
+}
+# macro_sequence
+
+# end
+# entity
+Modulo_maior_que_modulo
+# storage
+db|Ulala.(23).cnf
+db|Ulala.(23).cnf
+# case_insensitive
+# source_file
+modulo_maior_que_modulo.bdf
+8db737e2113ca7287662e964ad30cf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35
+ULA:inst|Subtrator:inst1|Modulo_maior_que_modulo:inst35
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst15
+}
+# macro_sequence
+
+# end
+# entity
+Bit_maior_que_bit
+# storage
+db|Ulala.(24).cnf
+db|Ulala.(24).cnf
+# case_insensitive
+# source_file
+bit_maior_que_bit.bdf
+54a9eec94445b9d38c86fdf3c0c04e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst3
+ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst2
+ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst1
+ULA:inst|SomadorCompleto:inst13|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst
+ULA:inst|Subtrator:inst1|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst3
+ULA:inst|Subtrator:inst1|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst2
+ULA:inst|Subtrator:inst1|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst1
+ULA:inst|Subtrator:inst1|Modulo_maior_que_modulo:inst35|Bit_maior_que_bit:inst
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst3
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst2
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst1
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst3
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst2
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst1
+ULA:inst|A_maior_que_B:A_maior_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst3
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst2
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst1
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst|Bit_maior_que_bit:inst
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst3
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst2
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst1
+ULA:inst|A_maior_que_B:A_menor_B|Modulo_maior_que_modulo:inst15|Bit_maior_que_bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+CompAB
+# storage
+db|Ulala.(25).cnf
+db|Ulala.(25).cnf
+# case_insensitive
+# source_file
+compab.bdf
+c7a030dac2e8a933f76c05f25c0c7d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13|CompAB:inst26
+ULA:inst|Subtrator:inst1|CompAB:inst13
+}
+# macro_sequence
+
+# end
+# entity
+Demux81
+# storage
+db|Ulala.(26).cnf
+db|Ulala.(26).cnf
+# case_insensitive
+# source_file
+demux81.bdf
+4f9772d4f852c97e24196393d5b63c6a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Demux81:inst
+}
+# macro_sequence
+
+# end
+# entity
+Complemento_a_dois
+# storage
+db|Ulala.(27).cnf
+db|Ulala.(27).cnf
+# case_insensitive
+# source_file
+complemento_a_dois.bdf
+a499ca46b22f8832774c2817ed1c9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Complemento_a_dois:Comp2
+}
+# macro_sequence
+
+# end
+# entity
+soma1
+# storage
+db|Ulala.(28).cnf
+db|Ulala.(28).cnf
+# case_insensitive
+# source_file
+soma1.bdf
+838cbfdb43b13131cf57bc187bc08f11
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2
+}
+# macro_sequence
+
+# end
+# entity
+somadorBit
+# storage
+db|Ulala.(29).cnf
+db|Ulala.(29).cnf
+# case_insensitive
+# source_file
+somadorbit.bdf
+ec44c5917d2434899989e1b73ef6c5b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2|somadorBit:inst17
+ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2|somadorBit:inst18
+ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2|somadorBit:inst19
+ULA:inst|Complemento_a_dois:Comp2|soma1:Complemento2|somadorBit:inst20
+}
+# macro_sequence
+
+# end
+# entity
+AND1
+# storage
+db|Ulala.(31).cnf
+db|Ulala.(31).cnf
+# case_insensitive
+# source_file
+and1.bdf
+e08230299574773b45b1a528933710b5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AND1:inst14
+}
+# macro_sequence
+
+# end
+# entity
+XOR1
+# storage
+db|Ulala.(32).cnf
+db|Ulala.(32).cnf
+# case_insensitive
+# source_file
+xor1.bdf
+5b908caedfbe42f37dc279a4d2a8f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|XOR1:inst15
+}
+# macro_sequence
+
+# end
+# entity
+A_maior_que_B
+# storage
+db|Ulala.(33).cnf
+db|Ulala.(33).cnf
+# case_insensitive
+# source_file
+a_maior_que_b.bdf
+44171887371f7bf07253bcd2da62af
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|A_maior_que_B:A_maior_B
+ULA:inst|A_maior_que_B:A_menor_B
+}
+# macro_sequence
+
+# end
+# entity
+Final
+# storage
+db|Ulala.(0).cnf
+db|Ulala.(0).cnf
+# case_insensitive
+# source_file
+final.bdf
+df5f6c62819b41536c847ca6a75d1ba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+AigualB
+# storage
+db|Ulala.(34).cnf
+db|Ulala.(34).cnf
+# case_insensitive
+# source_file
+aigualb.bdf
+bd8771e62c4ee83b5fd632da4678630
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AigualB:inst22
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|Ulala.(18).cnf
+db|Ulala.(18).cnf
+# case_insensitive
+# source_file
+ula.bdf
+9e65523441d34629d1b2a24d7fa61545
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+SomadorCompleto
+# storage
+db|Ulala.(19).cnf
+db|Ulala.(19).cnf
+# case_insensitive
+# source_file
+somadorcompleto.bdf
+7145f242aeabffaac156bbc36390ebd4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|SomadorCompleto:inst13
+}
+# macro_sequence
+
+# end
+# entity
+Subtrator
+# storage
+db|Ulala.(30).cnf
+db|Ulala.(30).cnf
+# case_insensitive
+# source_file
+subtrator.bdf
+7d7b2b15a26d61625170dbc1a5bedb9b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|Subtrator:inst1
+}
+# macro_sequence
+
+# end
+# complete
+
